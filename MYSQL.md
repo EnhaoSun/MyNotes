@@ -1,6 +1,7 @@
 - [基础](#basic)
   * [使用通配符的技巧](#useLIKE)
   * [正则表达式](#reg)
+  * [计算字段](#CalculatedFields)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
@@ -33,3 +34,10 @@
 | $ | 文本的结尾 |
 | [[:<:]] | 词的开始 |
 | [[:>:]] | 词的结尾 |
+
+<a name="CalculatedFields"></a>
+## 计算字段
+计算字段并不实际存在于数据库表中，计算字段是运行时在SELECT语句内创建的。
+* 可在SQL语句内完成的许多转换和格式化工作都可以直接在Client应用程序内完成。但一般来说，在数据库服务器上完成这些操作比在Client中完成要快得多，因为DBMS是设计来快速有效地完成这种处理的
+* 拼接字段：Concat()，把多个串连接起来形成一个较长的串；需要指定一个或多个指定的串，各个串之间用逗号分隔；多数DBMS使用+或| |来实现拼接，MYSQL使用Concat()函数来实现
+* 使用别名：AS otherName
