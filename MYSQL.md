@@ -1,0 +1,17 @@
+- [基础](#basic)
+  * [使用通配符的技巧](#useLIKE)
+  * [正则表达式](#reg)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+<a name="basic"></a>
+# 基础
+<a name="useLIKE"></a>
+## 使用通配符的技巧
+* 把通配符置于搜索模式的开始处，搜索起来是最慢的
+<a name="reg"></a>
+## 正则表达式
+* 区分大小写: REGEXP BINARY
+* OR匹配：[123] = 1 | 2 | 3
+* 匹配任意一个字符： '.000' 可以匹配 '1000', '2000', etc
+* NOT匹配：[^123] = 匹配除这些字符以外的任何东西
