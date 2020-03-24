@@ -1,4 +1,9 @@
 # Notes for Head First Design Pattern
+- [设计模式](#设计模式)
+- [Chapter 1](#chapter-1)
+  * [Question](#question)
+  * [设计原则](#设计原则)
+
 ## 设计模式
 **策略模式(Strategy Pattern)**：定义了算法族，分别封装起来，让它们之间可以互相替换，此模式让算法的变化独立于使用算法的客户  
 
