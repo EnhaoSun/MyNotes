@@ -1,4 +1,5 @@
 # Notes for Head First Design Pattern
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 - [设计模式](#设计模式)
 - [Chapter 1](#chapter-1)
   * [Question](#question)
