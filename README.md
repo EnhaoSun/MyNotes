@@ -2,7 +2,7 @@
 Notes for my books
 
 ## Tables
-* [Vim Command](Vim-command.md)
+* [Vim Command](Vim-Command.md)
 * [Leetcode algo summary](Algorithms-Leetcode-Offer.md)
 * [Mysql](MYSQL.md)
 * [Head First Design Pattern](HeadFirst_DesignPattern.md)
