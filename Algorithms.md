@@ -4,3 +4,22 @@
 优点：简洁  
 缺点：每一次函数调用，都需要在内存栈中分配空间以保存参数，返回地址及临时变量，而且往栈理压如数据和弹出数据都需要时间。
 另外，递归中有可能很多计算都是重复的，从而对性能带来很大的负面影响。
+
+
+
+# 经典问题
+
+## TopK
+
+* https://juejin.im/entry/5c565fb7f265da2d84105958
+* https://blog.csdn.net/believe__sss/article/details/79061532
+
+
+
+# 数据结构
+
+## 树
+
+### 红黑树
+
+* https://www.cnblogs.com/skywang12345/p/3245399.html
