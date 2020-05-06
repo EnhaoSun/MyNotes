@@ -20,9 +20,15 @@
 
 ## 树
 
+### 平衡树
+
+* [https://zh.wikipedia.org/wiki/%E5%B9%B3%E8%A1%A1%E6%A0%91](https://zh.wikipedia.org/wiki/平衡树)
+
 ### 红黑树
 
 * [https://zh.wikipedia.org/wiki/%E7%BA%A2%E9%BB%91%E6%A0%91](https://zh.wikipedia.org/wiki/红黑树)
 
+### 二叉搜索树
 
+* [https://zh.wikipedia.org/zh-cn/%E4%BA%8C%E5%85%83%E6%90%9C%E5%B0%8B%E6%A8%B9](https://zh.wikipedia.org/zh-cn/二元搜尋樹)
 
