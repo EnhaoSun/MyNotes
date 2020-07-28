@@ -9,7 +9,7 @@
 
 # 经典问题
 
-## TopK
+## Top K
 
 * https://juejin.im/entry/5c565fb7f265da2d84105958
 * https://blog.csdn.net/believe__sss/article/details/79061532
@@ -32,3 +32,11 @@
 
 * [https://zh.wikipedia.org/zh-cn/%E4%BA%8C%E5%85%83%E6%90%9C%E5%B0%8B%E6%A8%B9](https://zh.wikipedia.org/zh-cn/二元搜尋樹)
 
+## 哈希函数
+
+### 哈希冲突
+
+解决哈希冲突的方法
+
+* 开放寻址法：遇到冲突时，寻找其他空位
+* 链表法： 在冲突的位置，向数组元素（Entry）插入链表节点
