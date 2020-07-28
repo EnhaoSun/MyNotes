@@ -22,3 +22,15 @@ ref: https://vim.fandom.com/wiki/Search_and_replace
   * The g flag means global – each occurrence in the line is changed, rather than just the first.
 * :5,12s/foo/bar/g	
   * Change each 'foo' to 'bar' for all lines from line 5 to line 12 (inclusive).
+
+## Search selected
+
+1. Yank the text you want to search for
+2. q/p
+3. Enter
+
+**Explanation**
+
+`q/` works similarly to vanilla search `/` except you're in command mode so `p` actually does "paste" instead of typing the character `p`. So the above will copy the text you're searching for and paste it into a search.
+
+For more details type `:help q/`

@@ -104,10 +104,6 @@ git push origin --delete <branch-name>
 
 
 
-
-
-
-
 ## git commit
 
 Removing file from committed area requires 3 commands to be run, they are as follows-
@@ -126,5 +122,11 @@ or remove files which has been added
 
 ```shell
 git reset <file>
+```
+
+reset to a branch
+
+```shell
+git reset --hard origin/master
 ```
 

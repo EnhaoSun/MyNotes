@@ -103,6 +103,15 @@ kubectl cluster-info
 kubectl get nodes
 ```
 
+**View pods**
+
+```shell
+kubectl get pods # look for existing Pods
+kubectl describe pods # detail about pods in container
+```
+
+
+
 **Deploy app**
 
 ```

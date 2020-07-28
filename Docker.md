@@ -86,7 +86,7 @@ docker image ls -q | xargs -I {} docker image rm -f {}
 docker container prune
 ```
 
-## Notes
+## Notess
 
 ### 挂载目录和Volume的区别
 
@@ -102,7 +102,9 @@ Volume：container访问Host文件系统中docker管理目录下的volume目录
 
 
 
+The contents of the os-release file
 
-
-
+```shell
+cat /etc/os-release
+```
 

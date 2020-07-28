@@ -4,6 +4,14 @@
 
 **Disk usage of a directory**: sudo du -shc <directory>
 
+Convert all the files to unix format:
+
+```shell
+find <folder> -name "*" | xargs dos2unix
+```
+
+
+
 ## Port
 
 ```
