@@ -180,3 +180,12 @@ http://…../xxx?jSession=ByOK3vjFD75aPnrF7C2HmdnV6QZcEbzWoWiBYEnLerjQ99zWpBng!-
    链接：https://www.zhihu.com/question/24294477/answer/74783418
 
 3. 
+
+# 数据库
+
+原理：[https://github.com/CyC2018/CS-Notes/blob/master/notes/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E5%8E%9F%E7%90%86.md](https://github.com/CyC2018/CS-Notes/blob/master/notes/数据库系统原理.md)
+
+## 意向锁的作用
+
+* https://juejin.im/post/5b85124f5188253010326360
+
