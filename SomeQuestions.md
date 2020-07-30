@@ -1,4 +1,4 @@
-# 思考问题
+# Java
 
 ## Java的向上转型与向下转型
 
@@ -46,6 +46,21 @@ IoC 不是一种技术，只是一种思想，一个重要的面向对象编程�
 其实IoC对编程带来的最大改变不是从代码上，而是从思想上，发生了“主从换位”的变化。应用程序原本是老大，要获取什么资源都是主动出击，但是在IoC/DI思想中，应用程序就变成被动的了，被动的等待IoC容器来创建并注入它所需要的资源了。
 
 IoC很好的体现了面向对象设计法则之一—— 好莱坞法则：“别找我们，我们找你”；即由IoC容器帮对象找相应的依赖对象并注入，而不是由对象主动去找。
+
+
+
+### BeanFactory 和 ApplicationContext
+
+* 源码解析IOC：https://www.dazhuanlan.com/2019/10/01/5d92ac96cd87b/
+
+IoC容器主要系列： 一个是实现BeanFactory接口的简单容器系列，这系列之实现了容器的最基本功能； 另一个是ApplicationContext应用上下文，作为容器的高级形态而存在。
+
+BeanDefinition来管理对象以及之间的相互依赖关系：
+
+- 抽象了对Bean的定义，是让容器起作用的主要数据类型；
+- 对象依赖关系的数据抽象
+
+BeanDefinition像是容器里的水，BeanFactory是容器。
 
 
 
@@ -138,7 +153,10 @@ http://…../xxx?jSession=ByOK3vjFD75aPnrF7C2HmdnV6QZcEbzWoWiBYEnLerjQ99zWpBng!-
 
 * https://juejin.im/post/5a9f3ddb5188255585071151
 
+### Spring MVC执行流程
 
+* https://cloud.tencent.com/developer/article/1526271
+* [https://huzb.me/2019/03/22/Spring-MVC%E6%BA%90%E7%A0%81%E6%B5%85%E6%9E%90%E2%80%94%E2%80%94%E8%AF%B7%E6%B1%82%E5%A4%84%E7%90%86%E6%B5%81%E7%A8%8B/](https://huzb.me/2019/03/22/Spring-MVC源码浅析——请求处理流程/)
 
 ### Spring MVC > Spring Boot
 
@@ -189,3 +207,12 @@ http://…../xxx?jSession=ByOK3vjFD75aPnrF7C2HmdnV6QZcEbzWoWiBYEnLerjQ99zWpBng!-
 
 * https://juejin.im/post/5b85124f5188253010326360
 
+
+
+# HTTP
+
+## Message (报文)和Entity(实体)
+
+* https://stackoverflow.com/questions/2273837/which-one-is-the-message-and-which-one-the-entity-in-http-terminology
+
+A message is the whole HTTP request or response. And the entity is the message’s body (if there is any) and its corresponding [entity header fields](http://www.w3.org/Protocols/rfc2616/rfc2616-sec7.html#sec7.1).
