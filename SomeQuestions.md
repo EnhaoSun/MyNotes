@@ -1,4 +1,4 @@
-# 思考问题
+# Java
 
 ## Java的向上转型与向下转型
 
@@ -49,6 +49,21 @@ IoC很好的体现了面向对象设计法则之一—— 好莱坞法则：“�
 
 
 
+### BeanFactory 和 ApplicationContext
+
+* 源码解析IOC：https://www.dazhuanlan.com/2019/10/01/5d92ac96cd87b/
+
+IoC容器主要系列： 一个是实现BeanFactory接口的简单容器系列，这系列之实现了容器的最基本功能； 另一个是ApplicationContext应用上下文，作为容器的高级形态而存在。
+
+BeanDefinition来管理对象以及之间的相互依赖关系：
+
+- 抽象了对Bean的定义，是让容器起作用的主要数据类型；
+- 对象依赖关系的数据抽象
+
+BeanDefinition像是容器里的水，BeanFactory是容器。
+
+
+
 ### IOC和DI
 
 DI—Dependency Injection，即“依赖注入”：组件之间依赖关系由容器在运行期决定，形象的说，即由容器动态的将某个依赖关系注入到组件之中。依赖注入的目的并非为软件系统带来更多功能，而是为了提升组件重用的频率，并为系统搭建一个灵活、可扩展的平台。通过依赖注入机制，我们只需要通过简单的配置，而无需任何代码就可指定目标需要的资源，完成自身的业务逻辑，而不需要关心具体的资源来自何处，由谁实现。
@@ -64,8 +79,6 @@ DI—Dependency Injection，即“依赖注入”：组件之间依赖关系由�
 ### Reference
 
 * https://juejin.im/post/5c1ca8df6fb9a049b347f55c
-
-
 
 
 
@@ -138,7 +151,10 @@ http://…../xxx?jSession=ByOK3vjFD75aPnrF7C2HmdnV6QZcEbzWoWiBYEnLerjQ99zWpBng!-
 
 * https://juejin.im/post/5a9f3ddb5188255585071151
 
+### Spring MVC执行流程
 
+* https://cloud.tencent.com/developer/article/1526271
+* [https://huzb.me/2019/03/22/Spring-MVC%E6%BA%90%E7%A0%81%E6%B5%85%E6%9E%90%E2%80%94%E2%80%94%E8%AF%B7%E6%B1%82%E5%A4%84%E7%90%86%E6%B5%81%E7%A8%8B/](https://huzb.me/2019/03/22/Spring-MVC源码浅析——请求处理流程/)
 
 ### Spring MVC > Spring Boot
 
@@ -180,3 +196,21 @@ http://…../xxx?jSession=ByOK3vjFD75aPnrF7C2HmdnV6QZcEbzWoWiBYEnLerjQ99zWpBng!-
    链接：https://www.zhihu.com/question/24294477/answer/74783418
 
 3. 
+
+# 数据库
+
+原理：[https://github.com/CyC2018/CS-Notes/blob/master/notes/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E5%8E%9F%E7%90%86.md](https://github.com/CyC2018/CS-Notes/blob/master/notes/数据库系统原理.md)
+
+## 意向锁的作用
+
+* https://juejin.im/post/5b85124f5188253010326360
+
+
+
+# HTTP
+
+## Message (报文)和Entity(实体)
+
+* https://stackoverflow.com/questions/2273837/which-one-is-the-message-and-which-one-the-entity-in-http-terminology
+
+A message is the whole HTTP request or response. And the entity is the message’s body (if there is any) and its corresponding [entity header fields](http://www.w3.org/Protocols/rfc2616/rfc2616-sec7.html#sec7.1).
