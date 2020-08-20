@@ -12,15 +12,15 @@
     + [范式化和反范式化的优缺点](#NF_NONF)
       - [范式化](#NF_1)
       - [反范式化](#NONF_1)
-  * [MySQL逻辑架构](#mysql----)
-  * [Schema 与数据类型优化](#schema--------)
-    + [优化的数据类型](#-------)
-    + [Schema设计](#schema--)
-  * [索引](#--)
-    + [索引基础](#----)
-      - [索引类型](#----)
-        * [B-Tree索引](#b-tree--)
-    + [索引的优点](#-----)
+  * [MySQL逻辑架构](#mysqlArchi)
+  * [Schema 与数据类型优化](#schema-optim)
+    + [优化的数据类型](#optim-data-type)
+    + [Schema设计](#schema-design)
+  * [索引](#index)
+    + [索引基础](#index-basic)
+      - [索引类型](#index-type)
+        * [B-Tree索引](#b-tree-index)
+    + [索引的优点](#index-adv)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
@@ -199,8 +199,7 @@
 5. 可以减少冗余记录的查询。
 6. 更进一步，这样做相当于在应用中实现了哈希关联，而不是使用MySQL的嵌套环关联，某些场景哈希关联的效率更高很多。
 
-
-
+<a name="mysqlArchi"></a>
 ## MySQL逻辑架构
 
 ```shell
@@ -218,15 +217,16 @@
 ---------------------
 ```
 
-​										  
-
+<a name="schema-optim"></a>
 ## Schema 与数据类型优化
 
+<a name="optim-data-type"></a>
 ### 优化的数据类型
 
 * 使用MySQL的内建类型而不是用字符串来存储日期和时间
 * 当可为NULL的列被索引时，每个索引记录需要一个额外字节，如果计划在列上建索引，就应该尽量避免设计成可为NULL的列
 
+<a name="schema-design"></a>
 ### Schema设计
 
 * 太多列的坏处：MySQL<u>**存储引擎**</u>和<u>**服务器层**</u>之间先通过<u>**行缓存格式拷贝数据**</u>，然后在<u>**服务器层**</u>将缓存内容<u>**解码成各个列**</u>。从行缓冲中将编码过的列转换成行数据结构的操作代价非常高，<u>**转换的代价依赖于列的数量**</u>。 （而往往一些列并不会被用到）
@@ -234,13 +234,14 @@
 * 太多关联：单个查询最好在12个表以内做关联
 
   
-
+<a name="index"></a>
 ## 索引
 
 索引（在MySQL中也叫做”键（key）“）是存储引擎用于快速找到记录的一种数据结构。这是索引的基本功能。
 
 索引能够轻易将查询性能提高几个数量级，”最优“的索引有时比一个”好的“索引性能要好两个数量级。
 
+<a name="index-basic"></a>
 ### 索引基础
 
 在MySQL中，存储引擎现在索引中找到对应的值，然后更具匹配的索引记录找到对应的数据行：
@@ -256,14 +257,16 @@ SELECT first_name FROM sakila.actor WHERE actor_id = 5
 索引可以包含一个或多个列的值。MySQL只能高效地使用索引地最左前缀列。创建一个包含两个列地索引，和创建两个只包含一列地索引是大不相同地
 ```
 
+<a name="index-type"></a>
 #### 索引类型
 
 在MySQL中，索引是在存储引擎层而不是服务器层实现的：不同存储引擎的索引的工作方式并不一样，也不是所有的存储引擎都支持所有类型的索引
 
+<a name="b-tree-index"></a>
 ##### B-Tree索引
 
 
-
+<a name="index-adv"></a>
 ### 索引的优点
 
 主要作用：索引可以让服务器快速地定位到表的指定位置。
