@@ -89,6 +89,7 @@
 | REPEATABLE READ  | No         | No               | Yes        | No     |
 | SERIZALIZABLE    | No         | No               | No         | Yes    |
 
+<<<<<<< HEAD
 ## SQL DML
 
 ### 单表查询模板
@@ -125,6 +126,10 @@ WHERE S.sname REGEXP 'B.*'
 
 <a name="Design"></a>
 
+=======
+
+<a name="Design"></a>
+>>>>>>> f21afbf0202e41d6569d51d8d91794fa5aaaf5fc
 # 设计
 
 <a name="NormalForm"></a>
@@ -268,7 +273,10 @@ WHERE S.sname REGEXP 'B.*'
 * 太多关联：单个查询最好在12个表以内做关联
 
   
+<<<<<<< HEAD
 
+=======
+>>>>>>> f21afbf0202e41d6569d51d8d91794fa5aaaf5fc
 <a name="index"></a>
 ## 索引
 
@@ -323,4 +331,3 @@ B-Tree索引，按照顺序存储数据，所以MySQL可以用来做ORDER BY和G
 * 对于中到大型的表，索引就非常有效
 * 对于特大型的表，建立和使用索引的代价将随之增长，这种情况下需要一种奇数可以直接区分出查询需要的一组数据，而不是一条记录一条记录地匹配。例如可以使用分区技术
 ```
-
