@@ -13,8 +13,21 @@ E.g
 * Interface UserService
 * class UserServiceImpl implements UserService
 * UserService us = new UserServiceImpl()
+* https://juejin.im/post/5c0cc4975188252bf829e3dc
 
-https://juejin.im/post/5c0cc4975188252bf829e3dc
+
+
+- 接口只是定义了一个标准，很多类可以实现这个接口，eg：List接口
+  List list = new ArrayList(); // 实例化的是ArrayList这个类
+  List list = new Vector();   // 实例化的是Vector这个类 
+  其中：ArrayList 和 Vector 这两个类都实现了List接口
+- A instanceof  B 的作用：
+  1、 对象A是否为B类的对象：objA instanceof  B.class
+  2、A对象是否实现了B接口
+
+- 接口、抽象类，不可以被new！
+- 接口、抽象类可以理解成是模糊不定的东西，要使用它的特质必须要实例化，实例化不能直接通过new，而是通过实现接口方法、继承抽象类等。
+- https://blog.csdn.net/LVXIANGAN/article/details/88947430
 
 
 
