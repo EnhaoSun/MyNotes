@@ -7,4 +7,6 @@ Notes for my books
 * [Mysql](MYSQL.md)
 * [Head First Design Pattern](HeadFirst_DesignPattern.md)
 * [Spring Boot Annotation](SpringBoot_Annotation.md)
+* [Latex](LaTex_Markdown.md)
+* [Git](Git.md)
 
