@@ -34,3 +34,18 @@ ref: https://vim.fandom.com/wiki/Search_and_replace
 `q/` works similarly to vanilla search `/` except you're in command mode so `p` actually does "paste" instead of typing the character `p`. So the above will copy the text you're searching for and paste it into a search.
 
 For more details type `:help q/`
+
+
+
+
+
+**Vimrc**
+let NERDTreeShowHidden=1
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
+let NERDTreeShowLineNumbers=1
+map <C-n> :NERDTreeToggle<CR>
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
