@@ -40,6 +40,7 @@ For more details type `:help q/`
 
 
 **Vimrc**
+```bash
 let NERDTreeShowHidden=1
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
@@ -49,3 +50,4 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+```
