@@ -10,3 +10,10 @@ Notes for my books
 * [Latex](LaTex_Markdown.md)
 * [Git](Git.md)
 
+## Docs
+### Tools
+* [docsify](https://docsify.js.org/#/)： 快速构建文档
+* [Gitee Pages Action](https://github.com/yanglbme/gitee-pages-action)： Gitee Pages 的自动部署
+
+### Books
+* [Java进阶知识完全扫盲](https://doocs.gitee.io/advanced-java/#/)
